@@ -1,0 +1,443 @@
+local ScreenGui = Instance.new("ScreenGui")
+local GlockFrame = Instance.new("Frame")
+local GlockLabel = Instance.new("TextLabel")
+local GlockColors = Instance.new("Frame")
+local whitecolor = Instance.new("TextButton")
+local blackcolor = Instance.new("TextButton")
+local red = Instance.new("TextButton")
+local green = Instance.new("TextButton")
+local blue = Instance.new("TextButton")
+local yellow = Instance.new("TextButton")
+local purple = Instance.new("TextButton")
+local pink = Instance.new("TextButton")
+local ShottyFrame = Instance.new("Frame")
+local ShottyLabel = Instance.new("TextLabel")
+local ShottyColors = Instance.new("Frame")
+local whitecolor_2 = Instance.new("TextButton")
+local blackcolor_2 = Instance.new("TextButton")
+local red_2 = Instance.new("TextButton")
+local green_2 = Instance.new("TextButton")
+local blue_2 = Instance.new("TextButton")
+local yellow_2 = Instance.new("TextButton")
+local purple_2 = Instance.new("TextButton")
+local pink_2 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+GlockFrame.Name = "GlockFrame"
+GlockFrame.Parent = ScreenGui
+GlockFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+GlockFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GlockFrame.Position = UDim2.new(0.785888076, 0, 0.544973493, 0)
+GlockFrame.Size = UDim2.new(0, 157, 0, 247)
+GlockFrame.Visible = true
+
+GlockLabel.Name = "GlockLabel"
+GlockLabel.Parent = GlockFrame
+GlockLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GlockLabel.BackgroundTransparency = 1.000
+GlockLabel.Size = UDim2.new(0, 157, 0, 25)
+GlockLabel.Font = Enum.Font.RobotoMono
+GlockLabel.Text = "Glock"
+GlockLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+GlockLabel.TextSize = 14.000
+
+GlockColors.Name = "GlockColors"
+GlockColors.Parent = GlockFrame
+GlockColors.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+GlockColors.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GlockColors.Position = UDim2.new(0.0509554148, 0, 0.101214573, 0)
+GlockColors.Size = UDim2.new(0, 141, 0, 213)
+
+whitecolor.Name = "whitecolor"
+whitecolor.Parent = GlockColors
+whitecolor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+whitecolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+whitecolor.Position = UDim2.new(0.0709220171, 0, 0.0657277107, 0)
+whitecolor.Size = UDim2.new(0, 31, 0, 29)
+whitecolor.Font = Enum.Font.SourceSans
+whitecolor.Text = " "
+whitecolor.TextColor3 = Color3.fromRGB(0, 0, 0)
+whitecolor.TextSize = 14.000
+whitecolor.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Glock:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "Neon"
+            v.Color = Color3.fromRGB(255, 255, 255)
+			GlockFrame.Visible = false
+        end
+    end
+end)
+
+blackcolor.Name = "blackcolor"
+blackcolor.Parent = GlockColors
+blackcolor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+blackcolor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+blackcolor.Position = UDim2.new(0.390070945, 0, 0.0657277107, 0)
+blackcolor.Size = UDim2.new(0, 31, 0, 29)
+blackcolor.Font = Enum.Font.SourceSans
+blackcolor.Text = " "
+blackcolor.TextColor3 = Color3.fromRGB(0, 0, 0)
+blackcolor.TextSize = 14.000
+blackcolor.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Glock:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "Neon"
+            v.Color = Color3.fromRGB(0, 0, 0)
+			GlockFrame.Visible = false
+        end
+    end
+end)
+
+red.Name = "red"
+red.Parent = GlockColors
+red.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+red.BorderColor3 = Color3.fromRGB(0, 0, 0)
+red.Position = UDim2.new(0.70599997, 0, 0.0659999996, 0)
+red.Size = UDim2.new(0, 31, 0, 29)
+red.Font = Enum.Font.SourceSans
+red.Text = " "
+red.TextColor3 = Color3.fromRGB(0, 0, 0)
+red.TextSize = 14.000
+red.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Glock:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "Neon"
+            v.Color = Color3.fromRGB(255, 0, 0)
+			GlockFrame.Visible = false
+        end
+    end
+end)
+
+green.Name = "green"
+green.Parent = GlockColors
+green.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+green.BorderColor3 = Color3.fromRGB(0, 0, 0)
+green.Position = UDim2.new(0.0709220171, 0, 0.328638494, 0)
+green.Size = UDim2.new(0, 31, 0, 29)
+green.Font = Enum.Font.SourceSans
+green.Text = " "
+green.TextColor3 = Color3.fromRGB(0, 0, 0)
+green.TextSize = 14.000
+green.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Glock:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "Neon"
+            v.Color = Color3.fromRGB(0, 255, 0)
+			GlockFrame.Visible = false
+        end
+    end
+end)
+
+blue.Name = "blue"
+blue.Parent = GlockColors
+blue.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+blue.BorderColor3 = Color3.fromRGB(0, 0, 0)
+blue.Position = UDim2.new(0.390070945, 0, 0.328638494, 0)
+blue.Size = UDim2.new(0, 31, 0, 29)
+blue.Font = Enum.Font.SourceSans
+blue.Text = " "
+blue.TextColor3 = Color3.fromRGB(0, 0, 0)
+blue.TextSize = 14.000
+blue.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Glock:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "Neon"
+            v.Color = Color3.fromRGB(0, 0, 255)
+			GlockFrame.Visible = false
+        end
+    end
+end)
+
+yellow.Name = "yellow"
+yellow.Parent = GlockColors
+yellow.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+yellow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+yellow.Position = UDim2.new(0.70599997, 0, 0.328910768, 0)
+yellow.Size = UDim2.new(0, 31, 0, 29)
+yellow.Font = Enum.Font.SourceSans
+yellow.Text = " "
+yellow.TextColor3 = Color3.fromRGB(0, 0, 0)
+yellow.TextSize = 14.000
+yellow.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Glock:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "Neon"
+            v.Color = Color3.fromRGB(255, 255, 0)
+			GlockFrame.Visible = false
+        end
+    end
+end)
+
+purple.Name = "purple"
+purple.Parent = GlockColors
+purple.BackgroundColor3 = Color3.fromRGB(85, 0, 127)
+purple.BorderColor3 = Color3.fromRGB(0, 0, 0)
+purple.Position = UDim2.new(0.390070945, 0, 0.600938916, 0)
+purple.Size = UDim2.new(0, 31, 0, 29)
+purple.Font = Enum.Font.SourceSans
+purple.Text = " "
+purple.TextColor3 = Color3.fromRGB(0, 0, 0)
+purple.TextSize = 14.000
+purple.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Glock:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "Neon"
+            v.Color = Color3.fromRGB(85, 0, 127)
+			GlockFrame.Visible = false
+        end
+    end
+end)
+
+pink.Name = "pink"
+pink.Parent = GlockColors
+pink.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+pink.BorderColor3 = Color3.fromRGB(0, 0, 0)
+pink.Position = UDim2.new(0.0709220171, 0, 0.600938916, 0)
+pink.Size = UDim2.new(0, 31, 0, 29)
+pink.Font = Enum.Font.SourceSans
+pink.Text = " "
+pink.TextColor3 = Color3.fromRGB(0, 0, 0)
+pink.TextSize = 14.000
+pink.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Glock:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "Neon"
+            v.Color = Color3.fromRGB(255, 0, 255)
+			GlockFrame.Visible = false
+        end
+    end
+end)
+
+ShottyFrame.Name = "ShottyFrame"
+ShottyFrame.Parent = ScreenGui
+ShottyFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+ShottyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShottyFrame.Position = UDim2.new(0.572992682, 0, 0.544973493, 0)
+ShottyFrame.Size = UDim2.new(0, 157, 0, 247)
+ShottyFrame.Visible = true
+
+ShottyLabel.Name = "ShottyLabel"
+ShottyLabel.Parent = ShottyFrame
+ShottyLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShottyLabel.BackgroundTransparency = 1.000
+ShottyLabel.Size = UDim2.new(0, 157, 0, 25)
+ShottyLabel.Font = Enum.Font.RobotoMono
+ShottyLabel.Text = "Shotty"
+ShottyLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShottyLabel.TextSize = 14.000
+
+ShottyColors.Name = "ShottyColors"
+ShottyColors.Parent = ShottyFrame
+ShottyColors.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+ShottyColors.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShottyColors.Position = UDim2.new(0.0509554148, 0, 0.101214573, 0)
+ShottyColors.Size = UDim2.new(0, 141, 0, 213)
+
+whitecolor_2.Name = "whitecolor"
+whitecolor_2.Parent = ShottyColors
+whitecolor_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+whitecolor_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+whitecolor_2.Position = UDim2.new(0.0709220171, 0, 0.0657277107, 0)
+whitecolor_2.Size = UDim2.new(0, 31, 0, 29)
+whitecolor_2.Font = Enum.Font.SourceSans
+whitecolor_2.Text = " "
+whitecolor_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+whitecolor_2.TextSize = 14.000
+whitecolor_2.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Shotty:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "ForceField"
+            v.Color = Color3.fromRGB(255, 255, 255)
+			ShottyFrame.Visible = false
+        end
+    end
+end)
+
+blackcolor_2.Name = "blackcolor"
+blackcolor_2.Parent = ShottyColors
+blackcolor_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+blackcolor_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+blackcolor_2.Position = UDim2.new(0.390070945, 0, 0.0657277107, 0)
+blackcolor_2.Size = UDim2.new(0, 31, 0, 29)
+blackcolor_2.Font = Enum.Font.SourceSans
+blackcolor_2.Text = " "
+blackcolor_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+blackcolor_2.TextSize = 14.000
+blackcolor_2.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Shotty:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "ForceField"
+            v.Color = Color3.fromRGB(0, 0, 0)
+			ShottyFrame.Visible = false
+        end
+    end
+end)
+
+red_2.Name = "red"
+red_2.Parent = ShottyColors
+red_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+red_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+red_2.Position = UDim2.new(0.70599997, 0, 0.0659999996, 0)
+red_2.Size = UDim2.new(0, 31, 0, 29)
+red_2.Font = Enum.Font.SourceSans
+red_2.Text = " "
+red_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+red_2.TextSize = 14.000
+red_2.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Shotty:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "ForceField"
+            v.Color = Color3.fromRGB(255, 0, 0)
+			ShottyFrame.Visible = false
+        end
+    end
+end)
+
+green_2.Name = "green"
+green_2.Parent = ShottyColors
+green_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+green_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+green_2.Position = UDim2.new(0.0709220171, 0, 0.328638494, 0)
+green_2.Size = UDim2.new(0, 31, 0, 29)
+green_2.Font = Enum.Font.SourceSans
+green_2.Text = " "
+green_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+green_2.TextSize = 14.000
+green_2.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Shotty:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "ForceField"
+            v.Color = Color3.fromRGB(0, 255, 0)
+			ShottyFrame.Visible = false
+        end
+    end
+end)
+
+blue_2.Name = "blue"
+blue_2.Parent = ShottyColors
+blue_2.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+blue_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+blue_2.Position = UDim2.new(0.390070945, 0, 0.328638494, 0)
+blue_2.Size = UDim2.new(0, 31, 0, 29)
+blue_2.Font = Enum.Font.SourceSans
+blue_2.Text = " "
+blue_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+blue_2.TextSize = 14.000
+blue_2.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Shotty:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "ForceField"
+            v.Color = Color3.fromRGB(0, 0, 255)
+			ShottyFrame.Visible = false
+        end
+    end
+end)
+
+yellow_2.Name = "yellow"
+yellow_2.Parent = ShottyColors
+yellow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+yellow_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+yellow_2.Position = UDim2.new(0.70599997, 0, 0.328910768, 0)
+yellow_2.Size = UDim2.new(0, 31, 0, 29)
+yellow_2.Font = Enum.Font.SourceSans
+yellow_2.Text = " "
+yellow_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+yellow_2.TextSize = 14.000
+yellow_2.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Shotty:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "ForceField"
+            v.Color = Color3.fromRGB(255, 255, 0)
+			ShottyFrame.Visible = false
+        end
+    end
+end)
+
+purple_2.Name = "purple"
+purple_2.Parent = ShottyColors
+purple_2.BackgroundColor3 = Color3.fromRGB(85, 0, 127)
+purple_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+purple_2.Position = UDim2.new(0.390070945, 0, 0.600938916, 0)
+purple_2.Size = UDim2.new(0, 31, 0, 29)
+purple_2.Font = Enum.Font.SourceSans
+purple_2.Text = " "
+purple_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+purple_2.TextSize = 14.000
+purple_2.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Shotty:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "ForceField"
+            v.Color = Color3.fromRGB(85, 0, 127)
+			ShottyFrame.Visible = false
+        end
+    end
+end)
+
+pink_2.Name = "pink"
+pink_2.Parent = ShottyColors
+pink_2.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+pink_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+pink_2.Position = UDim2.new(0.0709220171, 0, 0.600938916, 0)
+pink_2.Size = UDim2.new(0, 31, 0, 29)
+pink_2.Font = Enum.Font.SourceSans
+pink_2.Text = " "
+pink_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+pink_2.TextSize = 14.000
+pink_2.MouseButton1Click:Connect(function()
+    local getc = game.Players.LocalPlayer.Backpack.Shotty:GetChildren()
+    for i,v in pairs(getc) do
+        if v.Name == "Union" then
+            v.UsePartColor = true 
+            wait()
+            v.Material = "ForceField"
+            v.Color = Color3.fromRGB(255, 0, 255)
+			ShottyFrame.Visible = false
+        end
+    end
+end)
